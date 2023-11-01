@@ -1,0 +1,106 @@
+:root {
+  --accent-color: #fff;
+  --header-color: #c7c7c7;
+  --order-color: #959595;
+  --background-color: #012d63;
+  --language-color: #dcdcdc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px 0;
+}
+
+.header-list {
+  display: flex;
+  gap: 29px;
+}
+
+.header-language {
+  display: flex;
+  gap: 15px;
+}
+
+.header-link {
+  color: var(--header-color);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.header-link:hover {
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.2s;
+}
+
+.header-language-link {
+  color: var(--language-color);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.header-language-link:hover {
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.2s;
+}
+
+/* colorave */
+
+.colorave {
+  background-image: url(../img/img-header/img-colorave/colorave-fon.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.colorave-sign {
+  color: var(--accent-color);
+  font-family: PT Serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.colorave-tittle {
+  color: var(--accent-color);
+  font-family: Playfair Display;
+  font-size: 144px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.colorave-text {
+  color: var(--accent-color);
+  font-family: Playfair Display;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.colorave-info {
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
