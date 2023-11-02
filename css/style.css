@@ -4,6 +4,7 @@
   --order-color: #959595;
   --background-color: #012d63;
   --language-color: #dcdcdc;
+  --button-color: #8e32c6;
 }
 
 body {
@@ -69,9 +70,11 @@ header {
 /* colorave */
 
 .colorave {
-  background-image: url(../img/img-header/img-colorave/colorave-fon.webp);
+  background-image: url("../img/img.colorave/colorave-fon.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  padding: 94px 0 183px 0;
 }
 
 .colorave-sign {
@@ -80,6 +83,10 @@ header {
   font-size: 48px;
   font-weight: 400;
   line-height: normal;
+}
+
+.colorave-logo {
+  width: 160px;
 }
 
 .colorave-tittle {
@@ -96,11 +103,64 @@ header {
   font-size: 72px;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 12px;
 }
 
 .colorave-info {
   color: var(--accent-color);
   font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 508px;
+  margin-bottom: 41px;
+}
+
+.colorave-btn {
+  border-radius: 10px;
+  background: var(--button-color);
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px 61px;
+}
+
+/* paint */
+
+.paint {
+  padding: 105px 0;
+  background-image: url("../img/img.paint/paint-fon.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.paint-container {
+  border: 5px solid var(--button-color);
+  padding: 25px 0;
+}
+
+.paint-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.paint-item {
+  padding: 0 50px;
+}
+
+.paint-item:nth-child(2n) {
+  border-right: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  padding: 0 95px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+.paint-tittle {
+  color: var(--accent-color);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 36px;
   font-weight: 400;
   line-height: normal;
 }
