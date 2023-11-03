@@ -5,6 +5,7 @@
   --background-color: #012d63;
   --language-color: #dcdcdc;
   --button-color: #8e32c6;
+  --date-color: #d8d8d8;
 }
 
 body {
@@ -161,6 +162,113 @@ header {
   text-align: center;
   font-family: Playfair Display;
   font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* revievs */
+
+.reviews {
+  padding: 25px 0 114px 0;
+  border-top: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  background-image: url("../img/img.reviews/reviews-flovers.webp"),
+    url("../img/img.reviews/reviews-fon.webp");
+  background-position: left 0 bottom 0, center;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+}
+
+.reviews-list {
+  display: flex;
+  gap: 93px;
+  justify-content: center;
+}
+
+.reviews-item {
+  padding: 49px 9px 29px 18px;
+  border-radius: 15px;
+  border-radius: 15px;
+  background: linear-gradient(
+    137deg,
+    #00e5e6 7.29%,
+    #00a8f7 26.04%,
+    #9a76f9 62.5%,
+    #cc5ec2 100%
+  );
+  box-shadow: 0px 14px 0px -5px #7b54b2, 0px 30px 0px -13px #533978;
+}
+
+.reviews-item:nth-child(2) {
+  background: linear-gradient(
+    137deg,
+    #ff68b4 0%,
+    #ff45e1 26.04%,
+    #ce3aff 62.84%,
+    #8961ff 100%
+  );
+
+  box-shadow: 0px 14px 0px -5px #9159b1, 0px 30px 0px -13px #61337c;
+}
+
+.reviews-item:nth-child(3) {
+  background: linear-gradient(
+    143deg,
+    #ffe128 0%,
+    #ff9b5c 30.21%,
+    #ff8381 63.29%,
+    #ff5489 100%
+  );
+  box-shadow: 0px 14px 0px -5px #b95a4c, 0px 30px 0px -13px #732f26;
+}
+
+.reviews-tittle {
+  color: var(--accent-color);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.reviews-info {
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  width: 228px;
+  margin-bottom: 8px;
+}
+
+.reviews-date {
+  color: var(--date-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 47px;
+  display: block;
+}
+.reviews-people-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.reviews-people-box {
+  margin-left: 5px;
+}
+
+.reviews-name {
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1px;
+}
+
+.reviews-years {
+  color: var(--date-color);
+  font-size: 12px;
   font-weight: 400;
   line-height: normal;
 }
