@@ -6,6 +6,7 @@
   --language-color: #dcdcdc;
   --button-color: #8e32c6;
   --date-color: #d8d8d8;
+  --order-confirm-color: #8d8d8d;
 }
 
 body {
@@ -124,6 +125,7 @@ header {
   font-weight: 400;
   line-height: normal;
   padding: 20px 61px;
+  border: 0;
 }
 
 /* paint */
@@ -135,14 +137,11 @@ header {
   background-size: cover;
 }
 
-.paint-container {
-  border: 5px solid var(--button-color);
-  padding: 25px 0;
-}
-
 .paint-list {
   display: flex;
   justify-content: space-around;
+  border: 5px solid var(--button-color);
+  padding: 25px 0;
 }
 
 .paint-item {
@@ -170,8 +169,6 @@ header {
 
 .reviews {
   padding: 25px 0 114px 0;
-  border-top: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
   background-image: url("../img/img.reviews/reviews-flovers.webp"),
     url("../img/img.reviews/reviews-fon.webp");
   background-position: left 0 bottom 0, center;
@@ -271,4 +268,144 @@ header {
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
+}
+
+/* order */
+
+.order {
+  padding: 21px 0 37px 0;
+  background-image: url("../img/img.order/order-fon.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.order-tittle {
+  color: var(--accent-color);
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.order-input {
+  width: 560px;
+  height: 60px;
+  background: var(--accent-color);
+  border: 0;
+  color: var(--order-color);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  padding-left: 25px;
+  margin-bottom: 19px;
+}
+
+.order-btn-text {
+  height: 60px;
+  background: var(--accent-color);
+  color: var(--order-color);
+  padding: 13px 79px 13px 0px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  border: 0;
+}
+
+.order-inputs {
+  width: 580px;
+  height: 50px;
+  border-radius: 50px;
+  background: var(--accent-color);
+  border: 0;
+  margin-bottom: 19px;
+  color: var(--order-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 24px;
+}
+
+.order-nike-btn {
+  border-radius: 16px;
+  background: #8e32c6;
+  padding: 20px 49px;
+  border: 0;
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.order-form {
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: #021635;
+  padding: 45px 0 37px 0;
+}
+
+.footer-text {
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-email-link {
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-container-logo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  align-items: center;
+}
+
+.footer-reserved-text {
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-reserved-text:nth-child(1) {
+  margin-bottom: 7px;
+  display: block;
+}
+
+.footer-logo-text {
+  color: var(--accent-color);
+  font-family: PT Serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+  text-align: center;
+}
+
+.footer-logo {
+  margin: 0;
 }
