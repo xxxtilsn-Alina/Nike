@@ -18,8 +18,10 @@ header {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1140px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header-container {
@@ -85,10 +87,6 @@ header {
   font-size: 48px;
   font-weight: 400;
   line-height: normal;
-}
-
-.colorave-logo {
-  width: 160px;
 }
 
 .colorave-tittle {
